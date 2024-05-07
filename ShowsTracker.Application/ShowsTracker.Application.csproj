@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Service\User\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Collection" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MailKit" Version="4.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Quartz.AspNetCore" Version="3.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExternalServices\ShowTracker.MyAnimeListService\ShowTracker.MyAnimeListService.csproj" />
+    <ProjectReference Include="..\ShowsTracker.Common\ShowsTracker.Common.csproj" />
+    <ProjectReference Include="..\ShowsTracker.Domain\ShowsTracker.Domain.csproj" />
+    <ProjectReference Include="..\ShowsTracker.Persistence\ShowsTracker.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
